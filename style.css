@@ -109,3 +109,49 @@ footer {
     color: #000;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    #container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .color-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    #generate-colors-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .color-box {
+        width: 60px;
+        height: 60px;
+    }
+
+    #generate-colors-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+
