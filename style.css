@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #06b3de; 
+    background: #06b3de;
     padding: 20px;
     color: #333;
 }
@@ -22,6 +22,7 @@ body {
     padding: 40px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     max-width: 500px;
+    width: 100%;
     text-align: center;
 }
 
@@ -49,6 +50,8 @@ header p {
     gap: 15px;
     margin: 20px 0;
     padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .color-box {
@@ -110,14 +113,15 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     #container {
         padding: 30px;
-        max-width: 90%;
+        max-width: 80%;
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     header p {
@@ -125,8 +129,8 @@ footer {
     }
 
     .color-box {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     #generate-colors-btn {
@@ -135,13 +139,43 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    #container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .color-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    #generate-colors-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 480px) {
+    #container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
     header h1 {
         font-size: 1.8em;
     }
 
     header p {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 
     .color-box {
@@ -150,8 +184,11 @@ footer {
     }
 
     #generate-colors-btn {
-        padding: 10px 20px;
+        padding: 10px 18px;
         font-size: 12px;
     }
-}
 
+    footer {
+        font-size: 0.8em;
+    }
+}
